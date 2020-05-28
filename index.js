@@ -109,7 +109,6 @@ console.log(Math.round( temperatureCtoF(24)));
 */
 
 /* 
-*/
 //🟦🟦🟦🟦🟦🟦🟦🟦          My  Solution          🟦🟦🟦🟦🟦🟦🟦🟦      
 
 function temperatureCtoF(mycelsius) {
@@ -136,29 +135,42 @@ function temperatureInF(myTempF, myTempC) {
 }
 
 console.log(temperatureInF(0, 24));
+*/
 
+/**
+ * ### Challenge `makePersonObject`
+ * 
+ * @instructions
+ * This function should take an id, a name and an email as arguments,
+ * and return an object with `id`, `name` and `email` properties.
+ * 
+ * For example, if we invoke `makePersonObject`
+ * passing 5, 'Leia' and 'leia@leia.com' as arguments,
+ * the returned value should look like:
+ * {
+ *   id: 5,
+ *   name: "Leia",
+ *   email: "leia@leia.com",
+ * }
+*/
+/*
+//🟦🟦🟦🟦🟦🟦🟦🟦          My  Solution          🟦🟦🟦🟦🟦🟦🟦🟦      
 
-// /**
-//  * ### Challenge `makePersonObject`
-//  * 
-//  * @instructions
-//  * This function should take an id, a name and an email as arguments,
-//  * and return an object with `id`, `name` and `email` properties.
-//  * 
-//  * For example, if we invoke `makePersonObject`
-//  * passing 5, 'Leia' and 'leia@leia.com' as arguments,
-//  * the returned value should look like:
-//  * {
-//  *   id: 5,
-//  *   name: "Leia",
-//  *   email: "leia@leia.com",
-//  * }
-// */
-// //🟦🟦🟦🟦🟦🟦🟦🟦          My  Solution          🟦🟦🟦🟦🟦🟦🟦🟦      
-
-// function makePersonObject(/* code here */) {
-//   /* code here */
-// }
+function makePersonObject(myID, myName, myEmail) {
+  const myPerson = 
+  {
+    id : myID,
+    "name": myName,
+    "E-mail" : myEmail
+  }
+  
+    return(myPerson);
+    
+  
+  }
+    console.log(makePersonObject(5, "Leia", "leia@leia.com"));
+ 
+ */  
 
 // /**
 //  * ### Challenge `getName`
