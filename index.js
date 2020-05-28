@@ -90,28 +90,52 @@ console.log(Math.round( temperatureCtoF(24)));
 
 
 
-// /**
-//  * ### Challenge `temperatureInF`
-//  * 
-//  * @instructions
-//  * This function should take an a temperature and a unit (either 'F' or 'C') as arguments,
-//  * and return the temperature in fahrenheit, rounded to the nearest whole number. 
-//  * 
-//  * For example, if we invoke `temperatureInF`
-//  * passing 88, 'F' as the arguments,
-//  * the returned value should be: '88F'
-//  * 
-//  * If we invoke `temperatureInF`
-//  * passing 24, 'C' as the arguments,
-//  * the returned value should be: '75F'
-//  * 
-//  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
-// */
-// //🟦🟦🟦🟦🟦🟦🟦🟦          My  Solution          🟦🟦🟦🟦🟦🟦🟦🟦      
+/**
+ * ### Challenge `temperatureInF`
+ * 
+ * @instructions
+ * This function should take an a temperature and a unit (either 'F' or 'C') as arguments,
+ * and return the temperature in fahrenheit, rounded to the nearest whole number. 
+ * 
+ * For example, if we invoke `temperatureInF`
+ * passing 88, 'F' as the arguments,
+ * the returned value should be: '88F'
+ * 
+ * If we invoke `temperatureInF`
+ * passing 24, 'C' as the arguments,
+ * the returned value should be: '75F'
+ * 
+ * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
+*/
 
-// function temperatureInF(/* code here */) {
-//   /* code here */
-// }
+/* 
+*/
+//🟦🟦🟦🟦🟦🟦🟦🟦          My  Solution          🟦🟦🟦🟦🟦🟦🟦🟦      
+
+function temperatureCtoF(mycelsius) {
+  const celsius = mycelsius;
+  fahrenheit= celsius * (9/5) + 32;
+
+  return(fahrenheit);
+}
+
+function temperatureInF(myTempF, myTempC) {
+
+  let fahrenheit = myTempF;
+  let celsius = myTempC;
+
+  if (fahrenheit > 0){
+    return(Math.round(fahrenheit)+"F");
+  }
+  else if (celsius > 0){
+    return( Math.round(temperatureCtoF(celsius))+"F");
+  }
+  else{
+    return("You must enter a value for both F and C... ");
+  }
+}
+
+console.log(temperatureInF(0, 24));
 
 
 // /**
