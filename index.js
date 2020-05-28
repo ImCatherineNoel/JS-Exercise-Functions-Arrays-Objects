@@ -36,9 +36,26 @@ function addNumbers(num1, num2) {
  * the returned value should look like: 'Goodbye, Andy. Have a great day.'
  * 
 */
-function sayGoodbye(/* code here */) {
-  /* code here */
-}
+
+
+//🟦🟦🟦🟦🟦🟦🟦🟦          My  Solution          🟦🟦🟦🟦🟦🟦🟦🟦      
+
+function getName(myID, myName, myEmail) {
+  
+  const myPerson = 
+  {
+    "id" : myID,
+    "name": myName,
+    "E-mail" : myEmail
+  }
+  
+    return(`Hello, my name is ${myPerson.name}`);
+    
+  
+  }
+  
+  console.log(getName(5, "Leia", "leia@leia.com"));
+
 
 /**
  * ### Challenge `temperatureCtoF`
@@ -54,6 +71,8 @@ function sayGoodbye(/* code here */) {
  * Hint 1: The formula for converting celsius to fahrenheit is t*9/5 + 32 where t is the temperature in celsius.
  * Hint 2: There is a very easy way to round numbers in JS. Do a google search to find out how. 
 */
+//🟦🟦🟦🟦🟦🟦🟦🟦          My  Solution          🟦🟦🟦🟦🟦🟦🟦🟦      
+
 function temperatureCtoF(/* code here */) {
   /* code here */
 }
@@ -75,6 +94,8 @@ function temperatureCtoF(/* code here */) {
  * 
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
+//🟦🟦🟦🟦🟦🟦🟦🟦          My  Solution          🟦🟦🟦🟦🟦🟦🟦🟦      
+
 function temperatureInF(/* code here */) {
   /* code here */
 }
@@ -96,6 +117,8 @@ function temperatureInF(/* code here */) {
  *   email: "leia@leia.com",
  * }
 */
+//🟦🟦🟦🟦🟦🟦🟦🟦          My  Solution          🟦🟦🟦🟦🟦🟦🟦🟦      
+
 function makePersonObject(/* code here */) {
   /* code here */
 }
@@ -113,6 +136,8 @@ function makePersonObject(/* code here */) {
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
+//🟦🟦🟦🟦🟦🟦🟦🟦          My  Solution          🟦🟦🟦🟦🟦🟦🟦🟦      
+
 function getName(/* code here */) {
   /* code here */
 }
@@ -133,6 +158,8 @@ function getName(/* code here */) {
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
+//🟦🟦🟦🟦🟦🟦🟦🟦          My  Solution          🟦🟦🟦🟦🟦🟦🟦🟦   
+
 function appleIndex(/* code here */) {
   /* code here */
 }
@@ -152,6 +179,8 @@ function appleIndex(/* code here */) {
  * passing in [ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ] as the argument,
  * the returned value should be: [ false, true, false, false, true, false ].
 */
+//🟦🟦🟦🟦🟦🟦🟦🟦          My  Solution          🟦🟦🟦🟦🟦🟦🟦🟦      
+
 function isItAnApple(/* code here */) {
   /* code here */
 }
@@ -181,7 +210,7 @@ var inventory = [
 */
 
 // Data from file 
-var data = require('data./inventory.js'); 
+//var data = require('data./inventory.js'); 
 
 /**
   * ### Example Array Challenge:
