@@ -208,26 +208,41 @@ function getName(myID, myName, myEmail) {
 
 
 
-// /**
-//  * ### Challenge `appleIndex`
-//  * 
-//  * @instructions
-//  * This function takes as its only argument an array 
-//  * containing strings,
-//  * and returns the index in the array of the string 'apple'.
-//  * 
-//  * You may assume the string 'apple' will appear exactly 
-//  * once in the array.
-//  * 
-//  * For example, if we invoke `appleIndex`
-//  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
-//  * the returned value should be: 2.
-// */
-// //🟦🟦🟦🟦🟦🟦🟦🟦          My  Solution          🟦🟦🟦🟦🟦🟦🟦🟦   
+/**
+ * ### Challenge `appleIndex`
+ * 
+ * @instructions
+ * This function takes as its only argument an array 
+ * containing strings,
+ * and returns the index in the array of the string 'apple'.
+ * 
+ * You may assume the string 'apple' will appear exactly 
+ * once in the array.
+ * 
+ * For example, if we invoke `appleIndex`
+ * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
+ * the returned value should be: 2.
+*/
 
-// function appleIndex(/* code here */) {
-//   /* code here */
-// }
+/* 
+//🟦🟦🟦🟦🟦🟦🟦🟦          My  Solution          🟦🟦🟦🟦🟦🟦🟦🟦   
+
+function appleIndex(myFruit){ 
+  let fruit = myFruit;
+  let apple = fruit.indexOf("apple");
+
+  return(apple);
+  } 
+
+
+  console.log(appleIndex(['orange','grape','apple','banana','mango']));
+
+*/
+
+
+
+
+
 
 // /**
 //  * ### Challenge `isItAnApple`
