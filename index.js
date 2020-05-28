@@ -172,24 +172,40 @@ function makePersonObject(myID, myName, myEmail) {
  
  */  
 
-// /**
-//  * ### Challenge `getName`
-//  * 
-//  * @instructions
-//  * This function takes as its only argument
-//  * an object containing a `name` property,
-//  * and return a string that reads `Hello, my name is {name}`,
-//  * where `{name}` is the name stored in the object.
-//  * 
-//  * For example, if we invoke `getName`
-//  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
-//  * the returned value should look like `Hello, my name is Leia`.
-// */
-// //🟦🟦🟦🟦🟦🟦🟦🟦          My  Solution          🟦🟦🟦🟦🟦🟦🟦🟦      
+/**
+ * ### Challenge `getName`
+ * 
+ * @instructions
+ * This function takes as its only argument
+ * an object containing a `name` property,
+ * and return a string that reads `Hello, my name is {name}`,
+ * where `{name}` is the name stored in the object.
+ * 
+ * For example, if we invoke `getName`
+ * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
+ * the returned value should look like `Hello, my name is Leia`.
+*/
 
-// function getName(/* code here */) {
-//   /* code here */
-// }
+/*
+//🟦🟦🟦🟦🟦🟦🟦🟦          My  Solution          🟦🟦🟦🟦🟦🟦🟦🟦      
+function getName(myID, myName, myEmail) {
+  
+  const myPerson = 
+  {
+    "id" : myID,
+    "name": myName,
+    "E-mail" : myEmail
+  }
+  
+    return(`Hello, my name is ${myPerson.name}`);
+    
+  
+  }
+  
+  console.log(getName(5, "Leia", "leia@leia.com"));
+
+*/
+
 
 
 // /**
