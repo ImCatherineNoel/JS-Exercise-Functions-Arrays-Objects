@@ -369,9 +369,9 @@ var inventory = [
 */
 
 // Data from file | module.exports = []
-var data = require("./data/inventory.js"); 
+// var data = inventory("./data/inventory.mjs"); 
 
-import {inventory} from './data/inventory.js';
+import {inventory} from './data/inventory.mjs';
 
 /* Things that don't work
 import exports from "data/inventory.js";
