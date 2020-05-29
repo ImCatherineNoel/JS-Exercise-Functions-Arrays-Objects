@@ -50,3 +50,53 @@ module.exports = [
   { id: 49, car_make: "Chrysler", car_model: "Sebring", car_year: 1996 },
   { id: 50, car_make: "Lincoln", car_model: "Town Car", car_year: 1999 }
 ]
+
+
+/*
+
+The export statement is used when creating JavaScript modules to export live bindings to functions, objects, or primitive values from the module 
+so they can be used by other programs with the import statement. Bindings that are exported can still be modified locally; when imported, although 
+they can only be read by the importing module the value updates whenever it is updated by the exporting module.
+
+Exported modules are in strict mode whether you declare them as such or not. The export statement cannot be used in embedded scripts.
+
+Syntax
+There are two types of exports:
+
+Named Exports (Zero or more exports per module)
+Default Exports (One per module)
+// Exporting individual features
+export let name1, name2, …, nameN; // also var, const
+export let name1 = …, name2 = …, …, nameN; // also var, const
+export function functionName(){...}
+export class ClassName {...}
+
+// Export list
+export { name1, name2, …, nameN };
+
+// Renaming exports
+export { variable1 as name1, variable2 as name2, …, nameN };
+
+// Exporting destructured assignments with renaming
+export const { name1, name2: bar } = o;
+
+// Default exports
+export default expression;
+export default function (…) { … } // also class, function*
+export default function name1(…) { … } // also class, function*
+export { name1 as default, … };
+
+// Aggregating modules
+export * from …; // does not set the default export
+export * as name1 from …; // Draft ECMAScript® 2O21
+export { name1, name2, …, nameN } from …;
+export { import1 as name1, import2 as name2, …, nameN } from …;
+export { default } from …;
+
+
+
+
+https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/Using
+
+
+*/

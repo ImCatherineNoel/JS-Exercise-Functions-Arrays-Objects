@@ -287,17 +287,14 @@ function isItAnApple(myFruit) {
       else {
         output.push('false');
       }
-    }
-    
+    }  
 }
 console.log(output);
 }
-*/
-
 console.log(isItAnApple(['orange', 'apple', 'banana', 'apples', 'apple', 'mango']));
 }
 
-
+*/
 
 /*
 // ⭐️ Example Test Data ⭐️
@@ -321,22 +318,78 @@ var inventory = [
 ]
 */
 
-// Data from file 
-var data = require('data/inventory.js'); 
+// Data from file | module.exports = []
+var data = require("./data/inventory.js"); 
+
+
+/* Things that don't work
+import exports from "data/inventory.js";
+import exports from "/data/inventory.js";
+import exports from ".data/inventory.js";
+import exports from "./data/inventory.js";
+
+import * as inventory from "exports";
+import exports as inventory from "exports";
+import { exports } as inventory from "exports";
+import "exports";
+
+var data = require("data/inventory.js"); 
+const array = require("..data/inventory.js");
+
+var data = require("data/inventory.js"); 
+const array = require("data/inventory.js");
+
+var data = require("./data/inventory.js"); 
+const array = require("./data/inventory.js");
+
+var data = require("./data/inventory.js"); 
+const array = require("./data/inventory.js");
+
+let inventory = import("./data/inventory.js");
+import { exports } from module;
+
+
+*/
+
+/* import syntaxes
+import defaultExport from "module-name";
+import * as name from "module-name";
+import { export1 } from "module-name";
+import { export1 as alias1 } from "module-name";
+import { export1 , export2 } from "module-name";
+import { foo , bar } from "module-name/path/to/specific/un-exported/file";
+import { export1 , export2 as alias2 , [...] } from "module-name";
+import defaultExport, { export1 [ , [...] ] } from "module-name";
+import defaultExport, * as name from "module-name";
+import "module-name";
+var promise = import("module-name");
+
+
+The static import statement is used to import read only live bindings which are exported by another module. 
+Imported modules are in strict mode whether you declare them as such or not. 
+The import statement cannot be used in embedded scripts unless such script has a type="module". 
+Bindings imported are called live bindings because they are updated by the module that exported the binding.
+
+There is also a function-like dynamic import(), which does not require scripts of type="module".
+
+Backward compatibility can be ensured using attribute nomodule on the script tag.
+
+*/
+
 
 /**
   * ### Example Array Challenge:
-  * 
   * @instructions
   * get3rdCar() should return the string `The is a Land Rover Defender Ice Edition`
-  * 
-  *
   * NOTE: This example has been completed for you.
 **/
 function get3rdCar(inventory) {
   const the3rd = inventory[2];
   return `The is a ${the3rd.car_make} ${the3rd.car_model}`
 }
+console.log(get3rdCar());
+
+
 
 // 👇 COMPLETE YOUR WORK BELOW 👇
 // 👇 COMPLETE YOUR WORK BELOW 👇
